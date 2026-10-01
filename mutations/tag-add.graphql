@@ -1,0 +1,15 @@
+# Validated against the live 2026-04 Admin GraphQL schema.
+# Run it with: sbo run-mutation mutations/tag-add.graphql <vars.jsonl> --wait
+# Each line of the vars file is this mutation's variables for one product,
+# e.g. {"id":"gid://shopify/Product/1","tags":["sale-2026"]}
+mutation AddTags($id: ID!, $tags: [String!]!) {
+  tagsAdd(id: $id, tags: $tags) {
+    node {
+      id
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

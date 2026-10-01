@@ -1,0 +1,12 @@
+# Validated against the live 2026-04 Admin GraphQL schema.
+# Run it with: sbo run-query queries/all-product-titles.graphql --wait
+{
+  products {
+    edges {
+      node {
+        id
+        title
+      }
+    }
+  }
+}

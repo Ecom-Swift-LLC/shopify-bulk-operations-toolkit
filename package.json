@@ -1,0 +1,43 @@
+{
+  "name": "shopify-bulk-operations-toolkit",
+  "version": "1.0.0",
+  "description": "Run Shopify Admin API Bulk Operations end to end — staged uploads, bulkOperationRunQuery/bulkOperationRunMutation, polling, JSONL parsing/building — zero dependencies.",
+  "main": "src/index.js",
+  "bin": {
+    "sbo": "bin/sbo.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "shopify",
+    "shopify-admin-api",
+    "bulk-operations",
+    "shopify-bulk-operations",
+    "shopify-cli",
+    "graphql",
+    "jsonl",
+    "ecommerce"
+  ],
+  "license": "MIT",
+  "author": "Ecom Swift LLC <support@ecomswiftllc.com>",
+  "homepage": "https://github.com/Ecom-Swift-LLC/shopify-bulk-operations-toolkit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ecom-Swift-LLC/shopify-bulk-operations-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ecom-Swift-LLC/shopify-bulk-operations-toolkit/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

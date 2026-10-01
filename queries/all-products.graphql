@@ -1,0 +1,25 @@
+# Validated against the live 2026-04 Admin GraphQL schema.
+# Run it with: sbo run-query queries/all-products.graphql --wait
+# The nested `variants` connection is why this needs a bulk operation rather
+# than normal pagination — a bulk query supports up to five connections
+# with a maximum nesting depth of two levels.
+{
+  products {
+    edges {
+      node {
+        id
+        title
+        handle
+        variants {
+          edges {
+            node {
+              id
+              sku
+              price
+            }
+          }
+        }
+      }
+    }
+  }
+}
